@@ -3,15 +3,15 @@
     <div class="triangle triangle-top"></div>
     <h1>URN <br> ISSN <br> RESOLVER</h1>
     <h2>Hosted <br> by the ISSN <br> International <br> Centre</h2>
-    <form method="post" action="#">
+    <form onsubmit="return mySubmit(this)">
       <p>
         Enter your
-        <label><input type="radio" name="choice"> ISSN</label>
-        <label><input type="radio" name="choice"> ISSN-L</label>
+        <label><input type="radio" name="choice" value="ISSN" checked> ISSN</label>
+        <label><input type="radio" name="choice" value="ISSN-L"> ISSN-L</label>
       </p>
       <p class="bg-search">
         <input type="search" name="search">
-        <input type="submit" name="submit" value="">
+        <input type="submit" value="">
       </p>
     </form>
     <div class="triangle triangle-bottom"></div>

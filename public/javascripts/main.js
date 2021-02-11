@@ -66,3 +66,14 @@ particlesJS('particles-js', {
   },
   retina_detect: true
 });
+
+function mySubmit (form) {
+  const data = new window.FormData(form);
+  const typeRessource = data.get('choice');
+  const issn = data.get('search');
+  let url = '/';
+  if (typeRessource === 'ISSN') url = `/urn:issn:${issn}`;
+  if (typeRessource === 'ISSN-L') url = `/urn:issn:${issn}?+issnl`;
+  window.location.href = url;
+  return false;
+}

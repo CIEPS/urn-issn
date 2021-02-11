@@ -24,9 +24,9 @@ const httpsServer = https.createServer(options, app);
  * Listen on provided port, on all network interfaces.
  */
 
-httpServer.listen(80);
+httpServer.listen(3000);
 httpServer.on('error', onError);
-httpsServer.listen(443);
+httpsServer.listen(3443);
 httpsServer.on('error', onError);
 
 /**

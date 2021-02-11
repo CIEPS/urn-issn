@@ -123,6 +123,25 @@ form input[type="submit"] {
   height: 50vh;
 }
 
+.flex-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .box {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.very-big {
+  font-size: 10rem;
+}
+
+.big {
+  font-size: 4rem;
+}
+
 @media only screen and (max-width: 695px) {
   .block {
     width: 100%;

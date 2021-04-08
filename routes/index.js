@@ -7,7 +7,7 @@ router.get('/', function (request, response) {
   response.render('index', { title: 'URN ISSN Resolver' });
 });
 
-router.get(/\/urn:issn:(\d{4}-\d{3}[\dX])$/, function (request, response, next) {
+router.get(/\/urn:issn:(\d{4}-\d{3}[\dX])$/i, function (request, response, next) {
   const urn = uri.parse(request.originalUrl.substring(1));
   const issn = urn.nss;
   if (urn.query === '+issnl') {
